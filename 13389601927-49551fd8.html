@@ -173,6 +173,12 @@
     border-radius:8px;
     overflow:hidden;
   }
+  .snap-card img{
+    display:block;
+    width:100%;
+    height:90px;
+    object-fit:cover;
+  }
   .snap-thumb{
     background:#EDF1F6;
     height:70px;
@@ -269,7 +275,7 @@
       </div>
       <div class="stat">
         <div class="num">3</div>
-        <div class="label">High-fill events flagged (fill above 90%)</div>
+        <div class="label">Times fill level hit 90% this month</div>
       </div>
       <div class="stat">
         <div class="num">30%</div>
@@ -342,8 +348,9 @@
     <h2>Fill-level trend</h2>
     <div class="chart-wrap"><canvas id="fillChart"></canvas></div>
     <p class="chart-note">Dashed lines mark pickup events. Fill resets each time the dumpster is lifted.</p>
+    <p class="chart-note">Data measured by CFX sensors may occasionally contain errors.</p>
     <div class="reco">
-      Recommendation for next month: average fill at pickup is <b>30%</b>, but fill level crossed 90% 3 time(s) this month. Keeping pickups on schedule would help avoid those near-capacity stretches.
+      Average fill at pickup is <b>30%</b>, and fill level crossed 90% 3 time(s) this month. We recommend using a larger dumpster size or increasing service frequency to raise your service level and help prevent overage.
     </div>
   </div>
 
@@ -365,7 +372,7 @@
   </div>
 
   <div class="footer">
-    Questions about this report? Contact your account manager · Haulla / CleanCity Networks
+    Have questions about this report? Reach out to support@haulla.com
   </div>
 
 </div>
